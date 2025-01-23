@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porto Projetos</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- MAILJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- 
+      Header
+    -->
+    <!--========== HEADER ==========-->
+    <div>
+      <header id="header">
+        <nav class="navbar-mobile">
+          <div class="logo" data-aos="fade-up" data-aos-delay="200">
+            <a href="#">
+              <img src="/imgs/logo-solar.png" alt="" />
+            </a>
+          </div>
+          <div class="bx" id="bx" data-aos="fade-up" data-aos-delay="100"></div>
+        </nav>
+
+        <nav class="navbar-desktop">
+          <div class="navbar-desktop-item-1">
+            <div class="logo">
+              <a href="#">
+                <img src="/imgs/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="navbar-desktop-item-2">
+            <ul class="menu-desktop">
+              <li class="menu-item" id="menu-item-1">
+                <a href="" class="nav-link-desktop">Inicio</a>
+              </li>
+              <li class="menu-item" id="menu-item-1">
+                <a href="" class="nav-link-desktop">Energia solar</a>
+              </li>
+              <li class="menu-item" id="menu-item-1">
+                <a href="" class="nav-link-desktop">Soluções</a>
+              </li>
+            </ul>
+            <a href="" class="primary-yellow">Solicitar orçamento</a>
+          </div>
+        </nav>
+
+        <nav class="menu-mobile" id="menu-mobile">
+          <ul class="nav-list-mobile mb-5">
+            <li class="mb-1"><a href="" class="nav-link-mobile">Inicio</a></li>
+            <li class="mb-1">
+              <a href="" class="nav-link-mobile">Energia solar</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="nav-link-mobile">Soluções</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="primary-yellow">Solicitar orçamento</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- 
+      Hero
+    -->
+    <section class="hero">
+      <div class="container flex-center">
+        <div class="left grid-6">
+          <div class="tag">
+            <div class="w-56 h-56 flex-center">
+              <img src="/imgs/icons/solar-roof.svg" alt="" />
+            </div>
+            <span class="overline">revolução solar</span>
+          </div>
+          <h1 class="h1 mt-3xs">Economize até 95% da sua conta de luz.</h1>
+          <p class="body-lg mt-3xs mb-sm">
+            <strong>Faça parte da revolução solar</strong> e economize mais.
+            Diversos benefícios para sua casa, empresa e seu bolso, faça um
+            orçamento <i>on-line</i>.
+          </p>
+          <a class="secondary flex-center" href="#"
+            ><img src="/imgs/icons/solar-panel.svg" alt="" />Benefícios da
+            energia solar</a
+          >
+        </div>
+        <div class="right grid-6">
+          <img src="/imgs/hero-illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Slider Logos Infinite
+    -->
+    <section class="logos py-2xl">
+      <div class="container">
+        <div class="tag">
+          <div class="w-56 h-56 flex-center">
+            <img src="/imgs/icons/handshake.svg" alt="ICONE" />
+          </div>
+          <span class="overline">faça parte você também</span>
+        </div>
+        <h1 class="h2 mt-3xs">Empresas que confiam na Porto Projetos</h1>
+      </div>
+      <div class="logos-slider">
+        <div class="slider_imgs">
+          <img src="/imgs/logos/logo-auge.png" alt="LOGO AUGE" />
+          <img src="/imgs/logos/logo-cidauto.png" alt="LOGO CIDAUTO" />
+          <img
+            src="/imgs/logos/logo-ea.png"
+            alt="LOGO ESCONDERIJO DO ALTISSIMO"
+          />
+          <img src="/imgs/logos/logo-emperial.png" alt="LOGO IMPERIAL" />
+          <img src="/imgs/logos/logo-mb-empregos.png" alt="LOGO MB EMPREGOS" />
+          <img src="/imgs/logos/logo-usibras.png" alt="LOGO USIBRAS" />
+          <img src="/imgs/logos/logo-auge.png" alt="LOGO AUGE" />
+          <img src="/imgs/logos/logo-cidauto.png" alt="LOGO CIDAUTO" />
+          <img
+            src="/imgs/logos/logo-ea.png"
+            alt="LOGO ESCONDERIJO DO ALTISSIMO"
+          />
+          <img src="/imgs/logos/logo-emperial.png" alt="LOGO IMPERIAL" />
+          <img src="/imgs/logos/logo-mb-empregos.png" alt="LOGO MB EMPREGOS" />
+          <img src="/imgs/logos/logo-usibras.png" alt="LOGO USIBRAS" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Benefits
+    -->
+    <section class="benefits py-4xl">
+      <div class="container">
+        <div class="left grid-6">
+          <div class="tag">
+            <div class="w-56 h-56 flex-center">
+              <img src="/imgs/icons/star.svg" alt="ICONE" />
+            </div>
+            <span class="overline">principais benefícios</span>
+          </div>
+          <h1 class="h2 mt-3xs">
+            <span class="yellow-20">Mais Economia</span> <br />
+            Mais Inteligência <br />
+            Mais Vantagens
+          </h1>
+          <p class="body-lg mt-3xs">
+            Economia para quem quer parar de pagar energia todo mês e conforto
+            sem preocupações.
+          </p>
+          <div class="card-hero">
+            <img src="/imgs/illustration-solar.png" alt="" />
+          </div>
+        </div>
+        <div class="card grid-6">
+          <div class="card-item">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z"
+                  fill="#FFB13D"
+                />
+              </svg>
+            </div>
+            <div class="card-text">
+              <h3 class="h4">Economia na sua conta de luz</h3>
+              <p class="body-lg mt-4xs">
+                Placas solares pode reduzir em até 95% sua conta de luz a curto,
+                médio e longo prazo.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M23.9642 4.84217C23.948 4.56727 23.8314 4.30788 23.6367 4.11315C23.442 3.91842 23.1826 3.80188 22.9077 3.78561C17.9136 3.49217 13.8889 5.03811 12.1414 7.92374C11.0033 9.79874 10.9639 12.0647 12.0046 14.2331C11.4981 14.8793 11.1085 15.609 10.8533 16.3894L9.66643 15.2025C10.3405 13.6303 10.2692 12.0047 9.44143 10.6378C8.13081 8.47124 5.14581 7.31249 1.45768 7.5253C1.18262 7.54159 0.923111 7.65826 0.728361 7.85319C0.533611 8.04811 0.417169 8.30773 0.401119 8.5828C0.187369 12.2709 1.34612 15.2559 3.51081 16.5665C4.24497 17.014 5.08852 17.2499 5.94831 17.2481C6.68133 17.2421 7.40545 17.0868 8.07643 16.7915L10.4999 19.2187V21.375C10.4999 21.6734 10.6184 21.9595 10.8294 22.1705C11.0404 22.3815 11.3265 22.5 11.6249 22.5C11.9232 22.5 12.2094 22.3815 12.4204 22.1705C12.6313 21.9595 12.7499 21.6734 12.7499 21.375V18.6103C12.7476 17.6047 13.0585 16.6233 13.6396 15.8025C14.5808 16.2483 15.6075 16.4847 16.6489 16.4953C17.7694 16.4978 18.8689 16.1909 19.8261 15.6084C22.7108 13.8609 24.2586 9.83624 23.9642 4.84217ZM4.67612 14.6419C3.43956 13.8919 2.69049 12.0675 2.62956 9.75467C4.94237 9.81561 6.76768 10.5647 7.51674 11.8012C7.80968 12.2777 7.92983 12.8404 7.85706 13.395L6.79487 12.329C6.58353 12.1177 6.29688 11.999 5.99799 11.999C5.69911 11.999 5.41246 12.1177 5.20112 12.329C4.98977 12.5404 4.87104 12.827 4.87104 13.1259C4.87104 13.4248 4.98977 13.7115 5.20112 13.9228L6.26424 14.9859C5.71119 15.0542 5.15132 14.9329 4.67612 14.6419ZM18.6608 13.6875C17.6614 14.2922 16.5046 14.4065 15.3036 14.04L18.7958 10.5487C19.0072 10.3374 19.1259 10.0507 19.1259 9.75186C19.1259 9.45297 19.0072 9.16633 18.7958 8.95499C18.5845 8.74364 18.2978 8.62491 17.9989 8.62491C17.7 8.62491 17.4134 8.74364 17.2021 8.95499L13.7099 12.4462C13.3471 11.25 13.4614 10.0884 14.0624 9.09374C15.253 7.12499 18.0608 5.99999 21.6861 5.99999H21.7499C21.763 9.65624 20.638 12.4856 18.6608 13.6875Z"
+                  fill="#FFB13D"
+                />
+              </svg>
+            </div>
+            <div class="card-text">
+              <h3 class="h4">Sustentabilidade</h3>
+              <p class="body-lg mt-4xs">
+                Uma tecnologia renovável, que não polui, não emite ruídos, não
+                gera efluentes.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.5 19.125H21.375V13.5C21.6153 13.5845 21.8771 13.5849 22.1176 13.5012C22.3582 13.4175 22.5632 13.2547 22.6992 13.0393C22.8352 12.824 22.894 12.5689 22.8662 12.3157C22.8384 12.0625 22.7255 11.8263 22.5459 11.6457L13.3256 2.42349C12.974 2.07198 12.4972 1.87451 12 1.87451C11.5028 1.87451 11.026 2.07198 10.6744 2.42349L1.45406 11.6438C1.27345 11.8242 1.15958 12.0607 1.13116 12.3144C1.10274 12.5681 1.16146 12.824 1.29766 13.0399C1.43387 13.2558 1.63947 13.419 1.88068 13.5026C2.12189 13.5862 2.38437 13.5853 2.625 13.5V19.125H1.5C1.20163 19.125 0.915483 19.2436 0.704505 19.4546C0.493526 19.6655 0.375 19.9517 0.375 20.25C0.375 20.5484 0.493526 20.8346 0.704505 21.0455C0.915483 21.2565 1.20163 21.375 1.5 21.375H22.5C22.7984 21.375 23.0845 21.2565 23.2955 21.0455C23.5065 20.8346 23.625 20.5484 23.625 20.25C23.625 19.9517 23.5065 19.6655 23.2955 19.4546C23.0845 19.2436 22.7984 19.125 22.5 19.125ZM4.875 11.4047L12 4.27974L19.125 11.4047V19.125H15.375V14.25C15.375 13.9517 15.2565 13.6655 15.0455 13.4546C14.8345 13.2436 14.5484 13.125 14.25 13.125H9.75C9.45163 13.125 9.16548 13.2436 8.9545 13.4546C8.74353 13.6655 8.625 13.9517 8.625 14.25V19.125H4.875V11.4047ZM13.125 19.125H10.875V15.375H13.125V19.125Z"
+                  fill="#FFB13D"
+                />
+              </svg>
+            </div>
+            <div class="card-text">
+              <h3 class="h4">Valorização no seu imóvel</h3>
+              <p class="body-lg mt-4xs">
+                Os painéis solares valoriza o valor do seu imóvel, seja
+                residência ou empresa.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 4.125C10.22 4.125 8.47991 4.65284 6.99987 5.64177C5.51983 6.63071 4.36628 8.03631 3.68509 9.68085C3.0039 11.3254 2.82567 13.135 3.17294 14.8808C3.5202 16.6266 4.37737 18.2303 5.63604 19.489C6.89472 20.7476 8.49836 21.6048 10.2442 21.9521C11.99 22.2993 13.7996 22.1211 15.4442 21.4399C17.0887 20.7587 18.4943 19.6052 19.4832 18.1251C20.4722 16.6451 21 14.905 21 13.125C20.9973 10.7389 20.0482 8.45129 18.361 6.76405C16.6737 5.07682 14.3861 4.12773 12 4.125ZM12 19.875C10.665 19.875 9.35994 19.4791 8.2499 18.7374C7.13987 17.9957 6.27471 16.9415 5.76382 15.7081C5.25293 14.4747 5.11925 13.1175 5.3797 11.8081C5.64015 10.4988 6.28303 9.29603 7.22703 8.35203C8.17104 7.40803 9.37377 6.76515 10.6831 6.5047C11.9925 6.24425 13.3497 6.37792 14.5831 6.88881C15.8165 7.39971 16.8707 8.26487 17.6124 9.3749C18.3541 10.4849 18.75 11.79 18.75 13.125C18.748 14.9146 18.0362 16.6303 16.7708 17.8958C15.5053 19.1612 13.7896 19.873 12 19.875ZM15.4209 9.32906C15.5258 9.43358 15.609 9.55777 15.6658 9.69452C15.7226 9.83126 15.7518 9.97787 15.7518 10.1259C15.7518 10.274 15.7226 10.4206 15.6658 10.5574C15.609 10.6941 15.5258 10.8183 15.4209 10.9228L12.7959 13.5478C12.5846 13.7592 12.298 13.8779 11.9991 13.8779C11.7002 13.8779 11.4135 13.7592 11.2022 13.5478C10.9908 13.3365 10.8721 13.0498 10.8721 12.7509C10.8721 12.4521 10.9908 12.1654 11.2022 11.9541L13.8272 9.32906C13.9317 9.22418 14.0559 9.14097 14.1926 9.08419C14.3294 9.0274 14.476 8.99818 14.6241 8.99818C14.7721 8.99818 14.9187 9.0274 15.0555 9.08419C15.1922 9.14097 15.3164 9.22418 15.4209 9.32906ZM8.625 1.5C8.625 1.20163 8.74353 0.915483 8.95451 0.704505C9.16549 0.493526 9.45164 0.375 9.75 0.375H14.25C14.5484 0.375 14.8345 0.493526 15.0455 0.704505C15.2565 0.915483 15.375 1.20163 15.375 1.5C15.375 1.79837 15.2565 2.08452 15.0455 2.2955C14.8345 2.50647 14.5484 2.625 14.25 2.625H9.75C9.45164 2.625 9.16549 2.50647 8.95451 2.2955C8.74353 2.08452 8.625 1.79837 8.625 1.5Z"
+                  fill="#FFB13D"
+                />
+              </svg>
+            </div>
+            <div class="card-text">
+              <h3 class="h4">Longevidade e baixa manutenção</h3>
+              <p class="body-lg mt-4xs">
+                Garantia de até 25 anos, alta confiabilidade e pouca manutenção.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Tab services
+    -->
+    <section class="tab-services py-4xl">
+      <div class="container">
+        <div class="right">
+          <div class="tag">
+            <div class="w-56 h-56 flex-center">
+              <img src="/imgs/icons/check.svg" alt="ICONE" />
+            </div>
+            <span class="overline">resolvemos seu problema</span>
+          </div>
+          <h1 class="h2 mt-3xs mb-3xs">
+            <span class="accent-green">Soluções completas</span> para sua
+            residência & empresa
+          </h1>
+          <p class="body-lg">
+            Conheça nossas diversas soluções, desde a geração de eletricidade
+            até o armazenamento de energia.
+          </p>
+        </div>
+        <div class="left mt-sm">
+          <div class="tabs">
+            <button class="tab-button active" data-tab="eletricos">
+              <div class="radius-tab active">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M3.99999 13.9999C3.81076 14.0006 3.62522 13.9475 3.46495 13.8469C3.30467 13.7463 3.17623 13.6023 3.09454 13.4316C3.01286 13.2609 2.98129 13.0705 3.00349 12.8826C3.0257 12.6946 3.10077 12.5169 3.21999 12.3699L13.12 2.16992C13.1943 2.0842 13.2955 2.02628 13.407 2.00565C13.5185 1.98503 13.6337 2.00293 13.7337 2.05642C13.8337 2.10991 13.9126 2.19582 13.9573 2.30003C14.0021 2.40424 14.0101 2.52057 13.98 2.62992L12.06 8.64992C12.0034 8.80144 11.9844 8.96444 12.0046 9.12493C12.0248 9.28541 12.0837 9.4386 12.1761 9.57135C12.2685 9.70409 12.3918 9.81243 12.5353 9.88708C12.6788 9.96172 12.8382 10.0004 13 9.99992H20C20.1892 9.99927 20.3748 10.0523 20.535 10.1529C20.6953 10.2535 20.8238 10.3976 20.9054 10.5683C20.9871 10.739 21.0187 10.9293 20.9965 11.1173C20.9743 11.3052 20.8992 11.483 20.78 11.6299L10.88 21.8299C10.8057 21.9156 10.7045 21.9736 10.593 21.9942C10.4815 22.0148 10.3663 21.9969 10.2663 21.9434C10.1663 21.8899 10.0874 21.804 10.0427 21.6998C9.99791 21.5956 9.98991 21.4793 10.02 21.3699L11.94 15.3499C11.9966 15.1984 12.0156 15.0354 11.9954 14.8749C11.9752 14.7144 11.9163 14.5612 11.8239 14.4285C11.7315 14.2957 11.6082 14.1874 11.4647 14.1128C11.3212 14.0381 11.1617 13.9994 11 13.9999H3.99999Z"
+                    stroke="#FFB13D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              Elétricos
+            </button>
+            <button class="tab-button" data-tab="civis">
+              <div class="radius-tab">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+              </div>
+              Civis
+            </button>
+          </div>
+
+          <div id="eletricos" class="tab-content active mt-md">
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Energia Solar</h3>
+                <p class="body-lg mt-4xs">
+                  A energia solar pode reduzir até 95% dos custos com
+                  eletricidade.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Ligação nova</h3>
+                <p class="body-lg mt-4xs">
+                  Pedido de ligação nova junto a concessionária de energia.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Projetos Elétricos</h3>
+                <p class="body-lg mt-4xs">
+                  Projetos para modificações ou novas conexões junto às
+                  concessionárias.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Venda de padrão</h3>
+                <p class="body-lg mt-4xs">
+                  Você pode comprar o seu padrão e a Porto Projetos instala e
+                  faz a ligação.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Cabine primária e T10</h3>
+                <p class="body-lg mt-4xs">
+                  Cabine para clientes que consomem na média e alta tensão.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Distribuição elétrica</h3>
+                <p class="body-lg mt-4xs">
+                  Projeto para instalação de tomadas, lâmpadas e afins.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="civis" class="tab-content mt-md">
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Regularização de Imóveis</h3>
+                <p class="body-lg mt-4xs">
+                  Seu imóvel valoriza em no mínimo 40% quando é regularizado.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Plantas Civis</h3>
+                <p class="body-lg mt-4xs">
+                  Novas construções desdobros, hidráulicas e elétricas.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">CLCB e AVCB</h3>
+                <p class="body-lg mt-4xs">
+                  Todo comércio precisa da licença do Corpo de Bombeiros!
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Laudos Técnicos</h3>
+                <p class="body-lg mt-4xs">
+                  Laudos elétricos e responsabilidade técnica para sua obra e
+                  empresa.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">Desdobros</h3>
+                <p class="body-lg mt-4xs">
+                  Desdobro de terrenos rápido, eficaz e inteligente junto às
+                  prefeituras.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card grid-4">
+              <div class="bullet"></div>
+              <div class="card-text">
+                <h3 class="h4">TRT de coluna e fachada</h3>
+                <p class="body-lg mt-4xs">
+                  Projeto e responsabilidade técnica para solicitação de ligação
+                  de energia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      Forms
+    -->
+    <section class="forms py-4xl">
+      <div class="container flex-center align-start">
+        <div class="left grid-5">
+          <div class="tag">
+            <div class="w-56 h-56 flex-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M23.5059 11.4966L19.7559 3.99656C19.6625 3.8098 19.5189 3.65273 19.3412 3.54296C19.1636 3.43318 18.9588 3.37502 18.75 3.375H5.25C5.04116 3.37502 4.83644 3.43318 4.65878 3.54296C4.48112 3.65273 4.33752 3.8098 4.24406 3.99656L0.494062 11.4966C0.415806 11.6528 0.375041 11.8252 0.375 12V17.25C0.375 17.7473 0.572544 18.2242 0.924175 18.5758C1.09828 18.7499 1.30498 18.888 1.53247 18.9823C1.75995 19.0765 2.00377 19.125 2.25 19.125H21.75C22.2473 19.125 22.7242 18.9275 23.0758 18.5758C23.4275 18.2242 23.625 17.7473 23.625 17.25V12C23.625 11.8252 23.5842 11.6528 23.5059 11.4966ZM9.05437 5.625L9.80437 7.125H7.82062L7.07062 5.625H9.05437ZM13.5544 5.625L14.3044 7.125H12.3206L11.5706 5.625H13.5544ZM9.69563 10.875L8.94563 9.375H10.9294L11.6794 10.875H9.69563ZM14.1956 10.875L13.4456 9.375H15.4294L16.1794 10.875H14.1956ZM18.6956 10.875L17.9456 9.375H19.9294L20.6794 10.875H18.6956ZM18.8044 7.125H16.8206L16.0706 5.625H18.0544L18.8044 7.125ZM2.625 12.2653L5.25 7.01531L7.875 12.2653V16.875H2.625V12.2653ZM10.125 16.875V13.125H21.375V16.875H10.125Z"
+                  fill="#D4DBD6"
+                />
+              </svg>
+            </div>
+            <span class="overline green-60">o que falam de nós</span>
+          </div>
+          <h1 class="h2 mt-3xs">
+            Não perca tempo, faça seu orçamento e
+            <span class="yellow-10">comece a economizar</span>
+          </h1>
+          <p class="body-lg mt-3xs">
+            Descubra como as nossas soluções podem ajudar a transformar sua
+            empresa. Selecione a solução ideal para você e fale com um
+            especialista.
+          </p>
+        </div>
+        <div class="grid-1"></div>
+        <!-- <div class="relative">
+          <img class="bg-form" src="/imgs/illustration-form.png" alt="" />
+        </div> -->
+        <div class="right grid-6">
+          <h5 class="h4 mb-3 grid-12">
+            Faça seu orçamento 100% <i>on-line</i>
+          </h5>
+          <form id="form-orcamento" class="forms-bg">
+            <div class="">
+              <div class="space-mobile mt-3xs grid-12">
+                <label class="mt-4xl">Nome</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs grid-6">
+                <label class="">E-mail</label>
+                <input
+                  class="mt-4xs"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs grid-6">
+                <label class="">Whatsapp</label>
+                <input
+                  class="mt-4xs"
+                  name="phone"
+                  id="phone"
+                  placeholder="(00) 00000-0000"
+                  required
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs flex-column grid-12">
+                <label class="">Tipo de propriedade</label>
+                <select
+                  class="mt-4xs custom-select"
+                  name="segment"
+                  id="segment"
+                  required
+                  placeholder="Selecione o tipo de propriedade"
+                >
+                  <option value="residencia">Residência</option>
+                  <option value="empresa">Residência em Condomínio</option>
+                  <option value="empresa">Apartamento</option>
+                  <option value="empresa">Comércio</option>
+                  <option value="empresa">Indústria</option>
+                </select>
+              </div>
+
+              <div class="space-mobile mt-3xs grid-12">
+                <label class="">Valor médio da sua conta Mensal (R$)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  name="account"
+                  id="account"
+                  placeholder="R$ 00,00"
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs grid-6">
+                <label for="cep" class="mb-1">CEP (Opcional)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  id="cep"
+                  maxlength="9"
+                  name="cep"
+                  placeholder="00000-000"
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs grid-6">
+                <label for="rua" class="mb-1">Rua (Opcional)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  id="adress"
+                  readonly
+                  name="adress"
+                  placeholder="Seu endereço"
+                />
+              </div>
+              <div class="space-mobile mt-3xs grid-12">
+                <label for="bairro" class="mb-1">Bairro (Opcional)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  id="district"
+                  name="district"
+                  readonly
+                  placeholder="Seu bairro"
+                />
+              </div>
+              <div class="space-mobile mt-3xs grid-6">
+                <label for="cidade" class="mb-1">Cidade (Opcional)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  id="city"
+                  name="city"
+                  readonly
+                  placeholder="Exemplo: São Paulo"
+                />
+              </div>
+              <div class="space-mobile mt-3xs grid-6">
+                <label for="estado" class="mb-1">Estado (Opcional)</label>
+                <input
+                  class="mt-4xs"
+                  type="text"
+                  id="state"
+                  name="state"
+                  readonly
+                  placeholder="Exemplo: SP"
+                />
+              </div>
+
+              <div class="space-mobile mt-3xs grid-12 mb-3xs">
+                <label class="text-radio">
+                  Já sabe como funciona o sistema de
+                  <span style="color: #d52f06">Energia Solar</span>?
+                </label>
+                <div
+                  style="display: flex; width: 40px; gap: 8px"
+                  class="mt-4xs"
+                >
+                  <input
+                    class="radio"
+                    type="radio"
+                    id="option-yes"
+                    name="radio"
+                    value="sim"
+                  />
+                  <label for="yes">Sim</label>
+                  <span class="checkmark"></span>
+                </div>
+                <div
+                  style="display: flex; width: 40px; gap: 8px"
+                  class="mt-4xs"
+                >
+                  <input type="radio" id="option-no" name="radio" value="não" />
+                  <label for="no">Não</label>
+                  <span class="checkmark"></span>
+                </div>
+              </div>
+
+              <button
+                id="form-button"
+                class="space-mobile grid-12 primary-yellow mt-3xs"
+                type="submit"
+              >
+                Enviar orçamento
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      FAQ
+    -->
+    <section class="faq py-4xl">
+      <div class="container faq-center">
+        <div class="center">
+          <div class="tag">
+            <div class="w-56 h-56 flex-center">
+              <img src="/imgs/icons/question.svg" alt="ICONE" />
+            </div>
+            <span class="overline">dúvidas</span>
+          </div>
+          <h1 class="h2 mb-3xs">Ainda tem dúvidas?</h1>
+          <p class="body-lg mb-3xs">Esclarecemos todas as suas dúvidas.</p>
+        </div>
+        <!-- ACCORDION -->
+        <div class="grid-3"></div>
+        <div class="grid-6">
+          <div class="accordion">
+            <button type="button" class="accordion-button">
+              <h3 class="h4">Question 1</h3>
+            </button>
+            <div class="accordion-content">
+              <p class="body-md pl-4xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, harum?
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion mt-3xs">
+            <button type="button" class="accordion-button">
+              <h3 class="h4">Question 2</h3>
+            </button>
+            <div class="accordion-content">
+              <p class="body-md pl-4xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, harum?
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion mt-3xs">
+            <button type="button" class="accordion-button">
+              <h3 class="h4">Question 3</h3>
+            </button>
+            <div class="accordion-content">
+              <p class="body-md pl-4xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, harum?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-content">
+        <h1 class="h4 grid-8">Economize agora, não perca mais tempo</h1>
+        <!-- <div class="grid-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="351"
+            height="8"
+            viewBox="0 0 351 8"
+            fill="none"
+          >
+            <path
+              d="M350.854 4.35355C351.049 4.15829 351.049 3.84171 350.854 3.64645L347.672 0.464466C347.476 0.269204 347.16 0.269204 346.964 0.464466C346.769 0.659728 346.769 0.976311 346.964 1.17157L349.793 4L346.964 6.82843C346.769 7.02369 346.769 7.34027 346.964 7.53553C347.16 7.7308 347.476 7.7308 347.672 7.53553L350.854 4.35355ZM0.5 4.5H350.5V3.5H0.5V4.5Z"
+              fill="#F4F6F5"
+            />
+          </svg>
+        </div> -->
+        <div class="grid-4 justify-end">
+          <a href="#" class="primary-yellow">Solicitar orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="grid-12">
+          <div class="grid-5">
+            <div class="footer-content">
+              <img src="/imgs/logo.png" alt="LOGO ENERGIA SOLAR" />
+              <p class="body-md mt-2xs medium">
+                <strong>Faça parte da revolução solar</strong> e economize mais.
+                Diversos benefícios para sua casa, empresa e seu bolso, faça um
+                orçamento <i>on-line</i>.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <span class="h5 yellow-10">Navegue</span>
+            <ul class="mt-2xs">
+              <li class="links-li"><a href="#">Inicio</a></li>
+              <li class="links-li mt-3xs"><a href="#">Energia Solar</a></li>
+              <li class="links-li mt-3xs"><a href="#">Serviços</a></li>
+              <li class="links-li mt-3xs"><a href="#">Sobre Nós</a></li>
+            </ul>
+          </div>
+
+          <div class="grid-3">
+            <span class="h5 yellow-10">Redes Sociais</span>
+            <div class="icon-buttons mt-2xs">
+              <a class="icon" href="#"
+                ><img src="/imgs/whatsapp-brand.png" alt="WHATSAPP BRAND LOGO"
+              /></a>
+
+              <a class="icon" href="#"
+                ><img src="/imgs/instagram-brand.png" alt="WHATSAPP BRAND LOGO"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-12 bg-alpha mt-1xs">
+          <div class="grid-6">
+            <h2 class="h6 semi-bold">Contatos</h2>
+            <div class="flex-column">
+              <a href="" class="link mt-4xs">(11) 4747-2541</a>
+              <a href="" class="link mt-4xs">contato@portoprojetos.com.br</a>
+            </div>
+          </div>
+          <div class="grid-6">
+            <h2 class="h6 semi-bold mb-4xs">Expediente</h2>
+            <span class="body-md"
+              >Funcionamos de segunda-feira a sexta-feira das 8h às 17h.</span
+            >
+          </div>
+        </div>
+        <div class="grid-12 footer-titles mt-1xs">
+          <div class="grid-6">
+            <p class="body-lg">
+              <strong>2025 © Porto Projetos.</strong> Todos os direitos
+              reservados.
+            </p>
+          </div>
+          <div class="grid-6 justify-end">
+            <p class="body-lg">
+              Design & Desenvolvido por:
+              <a href="#"><strong>Philippe Albuquerque</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Loop
+        loop: true,
+
+        // Numbers
+        pagination: {
+          el: ".number-pagination",
+          type: "fraction",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
