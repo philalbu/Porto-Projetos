@@ -1,0 +1,79 @@
+input {
+    border: 1.6px solid #DFDFE0;
+    border-radius: $radius-sm;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    padding: $space-3xs;
+
+    width: 100%;
+
+    &:focus {
+        outline-style: solid;
+        outline-color: #20312529;
+        outline-width: 2px;
+    }
+
+    &::placeholder {
+        color: $neutral-30;
+
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+    }
+}
+
+/* Estilo do placeholder quando o campo está preenchido */
+input:not(:placeholder-shown) {
+    color: $neutral-20;
+
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    /* Ou qualquer outra cor para ocultar o placeholder */
+}
+
+label {
+    color: $neutral-20;
+
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+}
+
+select {
+    border: 1.5px solid #DFDFE0;
+    border-radius: $radius-sm;
+    background-color: transparent;
+
+    padding: $space-3xs;
+
+    /* Arrow */
+        appearance: none;
+        background-image: url("/imgs/icons/caret-down.svg");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: right 0.7rem top 50%;
+        background-size: 0.65rem auto;
+
+    &::placeholder {
+        color: $neutral-30 !important;
+
+        font-size: 15px;
+    }
+}
+
+input[type="radio"] {
+    transform: scale(1.4);
+}
+
+button {
+    border: none;
+
+    cursor: pointer;
+}
+
+.text-radio {
+    font-size: 15px;
+}

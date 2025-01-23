@@ -1,0 +1,202 @@
+@mixin typeface-1($size, $device: desktop) {
+    font-family: "Inter", sans-serif;
+
+    @if $size ==heading-3xl and $device ==desktop {
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-3xl and $device ==mobile {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 120%;
+    }
+
+    @if $size ==heading-2xl and $device ==desktop {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-2xl and $device ==mobile {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 120%;
+    }   
+
+    @if $size ==heading-1xl and $device ==desktop {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-1xl and $device ==mobile {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @if $size ==heading-lg and $device ==desktop {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-lg and $device ==mobile {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @if $size ==heading-md and $device ==desktop {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-md and $device ==mobile {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @if $size ==heading-sm and $device ==desktop {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    @else if $size ==heading-sm and $device ==mobile {
+        font-size: 12;
+        font-weight: 600;
+        line-height: 120%;
+    }
+}
+
+$container-s: 564px;
+
+@mixin responsive($device) {
+    @if $device ==s {
+        @media screen and (max-width: $container-s) {
+            @content;
+        }
+    }
+}
+
+.h1 {
+    @include typeface-1(heading-3xl, desktop);
+
+    @include responsive(s) {
+        @include typeface-1(heading-3xl, mobile)
+    }
+}
+
+.h2 {
+    @include typeface-1(heading-2xl, desktop);
+    
+        @include responsive(s) {
+            @include typeface-1(heading-2xl, mobile)
+        }
+}
+
+.h3 {
+    @include typeface-1(heading-1xl, desktop);
+
+    @include responsive(s) {
+        @include typeface-1(heading-1xl, mobile)
+    }
+}
+
+.h4 {
+    @include typeface-1(heading-lg, desktop);
+
+    @include responsive(s) {
+        @include typeface-1(heading-lg, mobile)
+    }
+}
+
+.h5 {
+    @include typeface-1(heading-md, desktop);
+
+    @include responsive(s) {
+        @include typeface-1(heading-md, mobile)
+    }
+}
+
+.h6 {
+    @include typeface-1(heading-sm, desktop);
+
+    @include responsive(s) {
+        @include typeface-1(heading-sm, mobile)
+    }
+}
+
+@mixin typeface-2($size, $device: desktop) {
+    font-family: "Inter", sans-serif;
+
+    @if $size ==body-lg and $device ==desktop {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    @else if $size ==body-lg and $device ==mobile {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    @if $size ==body-md and $device ==desktop {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    @else if $size ==body-md and $device ==mobile {
+        font-size: 13px;
+        line-height: 150%;
+    }
+}
+
+.body-lg {
+    @include typeface-2(body-lg, desktop);
+    
+        @include responsive(s) {
+            @include typeface-2(body-lg, mobile)
+        }
+}
+
+.body-md {
+    @include typeface-2(body-md, desktop);
+
+    @include responsive(s) {
+        @include typeface-2(body-md, mobile)
+    }
+}
+
+.overline {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    @include responsive(s) {
+        font-size: 11px;
+    }
+}
+
+.yellow-20 {
+    color: $yellow-20;
+}
+
+.yellow-10 {
+    color: $yellow-10;
+}
+
+.green-60 {
+    color: $green-60;
+}
+
+.accent-green {
+    color: $green-30;
+}

@@ -1,0 +1,42 @@
+// Radius
+$full-radius: 9999px;
+$radius-2xl: 64px;
+$radius-1xl: 48px;
+$radius-lg: 32px;
+$radius-md: 16px;
+$radius-sm: 8px;
+$radius-1xs: 4px;
+$no-radius: 0px;
+
+.full-radius {
+    border-radius: $full-radius;
+}
+
+.radius-2xl {
+    border-radius: $radius-2xl;
+}
+
+.radius-1xl {
+    border-radius: $radius-1xl;
+}
+
+.radius-lg {
+    border-radius: $radius-lg;
+}
+
+.radius-md {
+    border-radius: $radius-md;
+}
+
+.radius-sm {
+    border-radius: $radius-sm;
+}
+
+.radius-1xs {
+    border-radius: $radius-1xs;
+}
+
+.no-radius {
+    border-radius: $no-radius;
+}
+

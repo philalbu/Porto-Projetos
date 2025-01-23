@@ -1,0 +1,569 @@
+// 
+// HERO
+// 
+.hero {
+    background-color: $green-20;
+
+    padding: $space-2xl;
+
+    .container {
+        padding: $space-md 0 0 0;
+
+        height: 70vh;
+
+        @media screen and (max-width: 991px) {
+            height: auto;   
+        }
+    }
+
+    @include responsive(s) {
+        padding: $space-1xl 0 0 0;
+    }
+
+    .left {
+        .tag {
+            color: $green-60;
+        }
+
+        h1 {
+            color: $green-90;
+        }
+
+        p {
+            color: $green-60;
+        }
+    }
+
+    .right {
+        position: relative;
+
+        img {
+            max-width: 100%;
+
+            // border: 1px solid red;
+
+            position: absolute;
+            top: -0;
+            bottom: 0;
+            right: -56px;
+
+            @media screen and (max-width: 991px) {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+// 
+// Slider Logos
+// 
+
+.logos {
+    .container {
+        text-align: center;
+
+        max-width: 592px;
+
+        .tag {
+            display: flex;
+            justify-content: center;
+
+            color: $neutral-20;
+        }
+
+        h1 {
+            color: $neutral-10;
+        }
+    }
+}
+
+.logos-slider {
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    margin-top: $space-md;
+
+    .slider_imgs {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 250px;
+        justify-items: stretch;
+        animation: slide 22s linear infinite;
+        gap: 32px;
+
+        @media screen and (max-width: 568px) {
+            gap: 20px;
+
+            grid-auto-columns: 200px;
+        }
+
+        img {
+            width: 104px;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes slide {
+    to {
+        translate: calc(-2 * 450px);
+    }
+}
+
+
+// 
+// Benefits
+//
+.benefits {
+    background: $yellow-40;
+
+    @include responsive(s) {
+        padding: $space-1xl 0;
+    }
+
+    .container {
+        .left {
+            position: sticky;
+            top: 0;
+
+            @media screen and (max-width: 991px) {
+                position: relative !important;
+            }
+
+            p {
+                max-width: 380px;
+            }
+        }
+    }
+}
+
+.card {
+    @media screen and (max-width: 568px) {
+        display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+    }
+
+    .card-item {
+        display: flex;
+        align-items: flex-start;
+        @media screen and (max-width: 568px) {
+            flex-direction: column;
+            align-items: center;
+
+            padding: $space-4xs;
+
+            width: 100%;
+        }
+
+        gap: $space-2xs;
+
+        padding: $space-1xs $space-md $space-1xs 0;
+
+        .card-icon {
+            border-radius: $radius-sm;
+            background: $green-20;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 48px;
+            max-width: 48px;
+            min-height: 48px;
+        }
+
+        .card-text {
+            border-bottom: 1px solid $neutral-50;
+
+            padding-bottom: $space-1xs;
+
+            @media screen and (max-width: 568px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+// 
+// Tab Navigation Services
+// 
+
+.tab-services {
+    background: $green-80;
+
+    @include responsive(s) {
+        padding: $space-1xl 0;
+    }
+
+    .right {
+        max-width: 592px;
+        margin: 0 auto;
+
+        text-align: center;
+
+        .tag {
+            justify-content: center;
+        }
+
+        h1 {
+            color: $alpha-green-8;
+        }
+
+        p {
+            color: $alpha-green-16;
+
+            max-width: 488px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.tabs {
+    border-bottom: 1px solid #E5E5E5;
+
+    display: flex;
+    justify-content: center;
+
+    max-width: 384px;
+    margin: 0 auto;
+}
+
+.tab-button {
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: $space-3xs;
+
+    padding: $space-3xs $space-1xs;
+
+    @include typeface-2(body-lg, desktop);
+    font-weight: 700;
+}
+
+.tab-button.active {
+    background-color: transparent;
+
+    border-bottom: 2px solid $green-20;
+    border-radius: 0.4px 0.4px 0px 0px;
+}
+
+.tab-button:not(.active) {
+    background-color: transparent;
+    color: #A3A3A3;
+}
+
+.tab-button:not(.active):hover {
+    background-color: #e5e7eb;
+}
+
+.service-card {
+    background: $neutral-70;
+    border-radius: $radius-md;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-start;
+    gap: $space-3xs;
+
+    padding: $space-sm $space-2xs;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background-color: $yellow-40;
+    }
+
+    .card-text {
+        h3 {
+            color: $neutral-10;
+        }
+
+        p {
+            color: $neutral-20;
+        }
+    }
+}
+
+.bullet {
+    background-color: $yellow-10;
+    border-radius: 50%;
+
+    max-width: 8px;
+    min-width: 8px;
+    max-height: 8px;
+    min-height: 8px;
+
+    margin-top: 4px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.radius-tab {
+    display: flex;
+    align-items: center;
+}
+
+// 
+// Talk
+// 
+
+.talk {
+    background-color: $yellow-40;
+
+    @include responsive(s) {
+        padding: $space-1xl 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .talk-texts {
+        max-width: 592px;
+
+        h1 {
+            color: $alpha-yellow-8;
+        }
+    }
+
+    .right {
+
+        span {
+            color: $alpha-yellow-16;
+
+            font-weight: 500;
+        }
+       max-width: 176px;
+    }
+}
+
+.navigation {
+    display: flex;
+    gap: $space-3xs;
+    justify-content: end;
+
+    .number-pagination {
+        color: $alpha-yellow-8;
+
+        display: flex;
+        align-items: center;
+        max-width:  32px;
+        min-width: 32px;
+
+        @include typeface-1(heading-sm, desktop);
+
+        &::after {
+            content: "";
+            border:  1px solid $neutral-50;
+            height: 12px;
+
+            margin-left: $space-3xs;
+        }
+    }
+}
+
+.swiper {
+    .swiper-slide {
+            display: flex !important;
+            align-items: center;
+            
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column !important;
+            }
+    
+            .texts-comment {
+                span {
+                    color: $alpha-yellow-16;
+                }
+    
+                h4 {
+                    color: $alpha-yellow-8;
+                }
+            }
+    
+            .bg-talk {
+                background: $green-30;
+    
+                padding: $space-2xl $space-3xl;
+    
+            width: 5%;
+    
+                h3 {
+                    color: $green-70;
+                }
+            }
+        }
+}
+
+  .button-swiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+}
+
+
+// 
+//  Forms
+// 
+
+.forms {
+    background-color: $green-20;
+
+    @include responsive(s) {
+        padding: $space-1xl 0;
+    }
+
+    h1 {
+        color: $green-90;
+    }
+
+    p {
+        color: $green-60;
+    }
+
+    .left {
+        position: sticky;
+        top: 0;
+
+        @include responsive(s) {
+                position: relative;
+            }
+    }
+
+    .right {
+        background-color: $yellow-40;
+        border-radius: $radius-lg;
+
+        padding: 32px 12px;
+
+        z-index: 999;
+    }
+}
+
+.forms-bg {
+    .primary-yellow {
+        width: -webkit-fill-available;
+    }
+}
+
+.bg-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -44px;
+    right: 0;
+
+    max-width: 700px;
+}
+
+// 
+// FAQ
+// 
+
+.faq {
+    background: $yellow-40;
+
+    @include responsive(s) {
+        padding: $space-1xl 0;
+    }
+
+    .center {
+        .tag {
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: $alpha-yellow-8;
+        }
+
+        p {
+            color: $alpha-yellow-16;
+        }
+    }
+}
+
+.container {
+    .accordion {
+            background: $green-30;
+            border-radius: $radius-md;
+
+            padding: $space-3xs;
+
+            width: 100%;
+
+            .accordion-button {
+                background-color: transparent;
+                color: $green-90;
+
+                cursor: pointer;
+
+                text-align: left;
+
+                padding: $space-4xs;
+
+                width: 100%;
+            }
+
+            .accordion-content {
+                overflow: hidden;
+
+                transition: 0.4s ease;
+                p {
+                    color: $green-60;
+                }
+            }
+        }
+}
+
+.faq-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+// 
+// CTA
+// 
+
+.cta {
+    background: $green-30;
+
+    padding: $space-2xs;
+
+    .cta-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            color: $green-90;
+
+            @include responsive(s) {
+                text-align: center;
+            }
+        }
+    }
+}

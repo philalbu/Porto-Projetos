@@ -1,0 +1,151 @@
+.primary-green {
+    border-radius: $radius-sm;
+
+    background: $green-10;
+
+    color: $green-90;
+
+    display: block;
+
+    width: fit-content;
+
+    padding: $space-3xs $space-1xs;
+    gap: $space-4xs;
+
+    transition: all .3s ease-in;
+    &:hover {
+        background-color: $green-30;
+    }
+    &:focus {
+        outline: 4px solid $green-60;
+    }
+
+    @include typeface-1(heading-md, desktop);
+}
+.primary-yellow {
+    border-radius: $radius-sm;
+
+    background: $yellow-10;
+
+    color: $alpha-yellow-8;
+
+    display: block;
+
+    width: fit-content;
+
+    padding: $space-3xs $space-1xs;
+    gap: $space-4xs;
+
+    transition: all .3s ease-in;
+    &:hover {
+        background-color: $yellow-30;
+    }
+    &:focus {
+        outline: 4px solid $yellow-10;
+    }
+
+    @include typeface-1(heading-md, desktop);
+}
+.secondary {
+    border-radius: $radius-sm;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    background: transparent;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    display: block;
+
+    width: fit-content;
+
+    padding: $space-3xs $space-1xs;
+    gap: $space-4xs;
+
+    transition: all .3s ease-in;
+    &:hover {
+        background-color: $yellow-10;
+        border: none;
+
+        color: $alpha-yellow-8;
+    }
+    &:focus {
+        outline: 4px solid $yellow-30;
+    }
+
+    @include typeface-1(heading-md, desktop);
+}
+.tertiary {}
+
+.icon-buttons {
+    display: flex;
+    gap: $space-3xs;
+
+
+}
+
+.icon{
+    border-radius: $radius-md;
+    border: 1.4px solid $green-40;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: fit-content;
+
+    padding: 32px;
+
+    transition: all .5s ease-in;
+
+    width: 100%;
+
+    &:hover {
+        background: $green-30;
+    }
+
+    img {
+        max-width: 24px;
+    }
+}
+
+.link{
+    display: inline-block;
+
+    color: $green-60;
+
+    transition: 0.5s ease;
+
+    position: relative;
+
+    width: fit-content;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0px;
+
+        width: 0%;
+        height: 2px;
+        z-index: -1;
+
+        margin-top: 4px;
+
+        transition: 0.5s ease;
+
+        background-color: $yellow-10;
+    }
+
+    &:hover {
+        opacity: 0.8;
+        padding-left: 2px;
+        background-position: 8px 50%;
+
+        &:after {
+            width: 100%;
+
+            margin-top: 4px;
+        }
+    }
+    @include typeface-2(body-md, desktop);
+}

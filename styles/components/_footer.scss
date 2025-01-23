@@ -1,0 +1,86 @@
+footer {
+    background: $green-20;
+
+    padding: $space-1xl 0 $space-3xs 0;
+}
+
+.footer-content {
+
+    p {
+        color: $green-60;
+
+        max-width: 340px;
+    }
+}
+
+.links-li {
+    a {
+        display: inline-block;
+    
+        color: $green-60;
+        
+        transition: 0.5s ease;
+    
+        position: relative;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0px;
+    
+            width: 0%;
+            height: 2px;
+            z-index: -1;
+    
+            margin-top: 4px;
+
+            transition: 0.5s ease;
+            
+            background-color: $yellow-10;
+        }
+    
+        &:hover {
+            opacity: 0.8;
+            padding-left: 2px;
+            background-position: 8px 50%;
+    
+            &:after {
+                width: 100%;
+
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.bg-alpha {
+    background-color: $green-30;
+    border-radius: $radius-lg;
+
+    padding: $space-sm;
+
+    @include responsive(s) {
+        padding: $space-3xs;
+    }
+
+    h2 {
+        color: $green-90;
+    }
+
+    span {
+        color: $green-60;
+    }
+}
+
+.footer-titles {
+    border-top: 1px solid $green-40;
+
+    color: $green-60;
+
+    padding-top: $space-3xs;
+
+    @include responsive(s) {
+        text-align: center;
+    }
+}
